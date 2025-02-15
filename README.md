@@ -3,15 +3,13 @@ This project involves implementing a assembler for an extended SIMPLE instructio
 
 Features
 
-Two-Pass Assembler:
-
+#Assembler:
   Reads assembly language from a text file
   Assigns label values and instruction opcodes
   Diagnoses common assembly errors (e.g., unknown instruction, missing label, duplicate label)
   Produces a binary object file with machine code starting at address zero
   Generates a listing file showing instructions and addresses
   
-
 Assembler Testing:
   Sample programs are provided for validation
   Additional programs were tested
@@ -19,13 +17,14 @@ Assembler Testing:
 Bubble Sort in SIMPLE Assembly:
   Implementation of bubble sort using the SIMPLE instruction set
 
-SIMPLE Machine Emulator:
+#Emulator:
+
   Partial functionality of the provided emulator
   Loads object files and executes test programs
   Supports memory dumping and error detection
 
 Instructions
-Assembler Usage
+  #Assembler Usage
 
   Compile the assembler using:
   gcc asm.cpp -o asm
@@ -33,13 +32,13 @@ Assembler Usage
   Run the assembler:
   ./asm input.asm
 
-Emulator Usage
+#Emulator Usage
 
-Compile the emulator using:
-gcc emu.cpp -o emu
-
-Run the emulator:
-./emu input.o
+  Compile the emulator using:
+  gcc emu.cpp -o emu
+  
+  Run the emulator:
+  ./emu input.o
 
 File Structure
 
