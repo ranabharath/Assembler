@@ -27,7 +27,7 @@ This project involves implementing an assembler for an extended SIMPLE instructi
 ### Assembler Usage
 Compile the assembler using:
 ```sh
-gcc asm.cpp -o asm
+g++ asm.cpp -o asm
 ```
 Run the assembler:
 ```sh
@@ -37,7 +37,7 @@ Run the assembler:
 ### Emulator Usage
 Compile the emulator using:
 ```sh
-gcc emu.cpp -o emu
+g++ emu.cpp -o emu
 ```
 Run the emulator:
 ```sh
