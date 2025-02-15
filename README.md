@@ -1,6 +1,4 @@
-# CS2102 Mini Project
-
-## Project Overview
+# Project Overview
 This project involves implementing an assembler for an extended SIMPLE instruction set, writing and testing programs in SIMPLE assembly, and developing an emulator for the SIMPLE machine.
 
 ## Features
