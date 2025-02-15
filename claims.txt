@@ -1,0 +1,80 @@
+/*******************************************************************
+Title : Claims
+Name : V.Rana Bharath
+Roll no : 2301CS39
+
+Declaration of Authorship
+This txt file , claims.txt is a part of assignment of CS2102_PROJECT
+at the Department of Computer Science and Engineering , IIT PATNA.
+********************************************************************/
+
+===============
+Files :
+===============
+
+All the files I submitted asm.cpp , emu.cpp, claims.txt have my name at the start,
+along with declaration of authorship
+
+The evidence for Assembler including the output files from the three test examples(test1, test2, test4) and 
+bubblesort has also been uploaded. They are test1(3 output files),test2(1 output file),test4(3 output files)
+
+All test files have been tested and working properly.
+
+================
+Files Submitted:
+================
+    => amu.cpp and emu.cpp along with.exe for both these files.
+    => 5 test files including bubblesort along with 13 files
+    => claims.txt 
+    => Screenshot of bubblesort (both assembler and emulator)
+
+=========================
+Compilation Instructions:
+=========================
+
+Compile  in the following way :
+
+    g++ asm.cpp -o asm
+    ./asm <insert_file_name>.asm
+
+    g++ emu.cpp -o emu
+    ./emu <insert_file_name>.asm
+
+
+=============================
+Program Format and Structure:
+=============================
+
+The Assembler:
+    * Written in C++ language
+    * All Instructions (except SET) are implemented 
+    * It contains a table of instruction names and expected operands
+    * asm.cpp is the main and only file of my assembler
+    * It is a 2 pass assembler (implemented in asm.cpp)
+    * outputs the required correct information in the form of 3 things :
+       *  the errors in log file if not assembled properly(They will not be displayed in the terminal).
+       *  .l file for listing 
+       *  .o file for machine code 
+    * In the .o file , I dedicated the first row specifically for DataContent which should be loaded to the memory
+      because it doesnt have the OPCode , so emulator would think it is a instruction to avoid this I have
+      done the above thing. ( .o file has instructions from line 2)
+    * All important errors are diagnosed along with thier line numbers
+    * Comments or self descriptive variable names have been used
+    * The Assembler is capable of understanding the values given in decimal , octal or hexadecimal format
+    * Assembler successfully skips empty lines and comments
+
+The Emulator:
+    * The emulator is interactive and can run single or multiple instructions according to user's input.
+    * Assumes data insrtuctions will be written only after halt statement and should never be
+      run else can produce ambigious results.
+    * Error handling:  Throws error is segmentation fault occurs.
+    * Functionalities:
+       => Execute ( Runs the Program )
+       => Show Registers (Shows the state the registers)
+       => Show Memory (Shows the Memory)
+       => Clear (Clears the memory and brings the register to start state (i.e initialises everything to zero))
+    
+
+
+
+
