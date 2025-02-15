@@ -9,7 +9,7 @@ This project involves implementing an assembler for an extended SIMPLE instructi
 - Reads assembly language from a text file
 - Assigns label values and instruction opcodes
 - Diagnoses common assembly errors (e.g., unknown instruction, missing label, duplicate label)
-- Produces a binary object file with machine code starting at address zero
+- Produces object file with machine code starting at address zero
 - Generates a listing file showing instructions and addresses
 
 ### Assembler Testing
